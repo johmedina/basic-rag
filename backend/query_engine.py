@@ -14,13 +14,17 @@ class RAGChatbot:
         if not retrieved_docs:
             return "Sorry, I couldn't find relevant information."
         
-        prompt = f"Given the following retrieved information: {retrieved_docs}, answer the query: {query}."
+        prompt = f"""
+            Answer the query: {query} **ONLY using the following retrieved information**: {retrieved_docs}.
+            If you cannot find the answer, say 'I do not have enough information.'"""
         # print('PROMPT --- ', prompt, '---')
+
         response = self.client.chat.completions.create(
             model="gpt-4o-mini",
             messages=[
                 {"role": "system", "content": 
                   """You are an AI assistant for the Ooredoo Group. You will be answering mostly financial related questions.
+                  Your answer should be **concise and fact-based**, directly matching the expected answer format.
                   Your answer should end with: My final answer is __."""
                 },
                 {"role": "user", "content": prompt}

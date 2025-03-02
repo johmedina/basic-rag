@@ -22,9 +22,6 @@ def measure_latency(chatbot, ground_truth):
         end_time = time.time()
         
         latencies.append(end_time - start_time)
-
-        if i > 5:
-            break
     
     avg_latency = sum(latencies) / len(latencies)
     print(f"Average Response Time: {avg_latency:.2f} seconds")
@@ -93,13 +90,11 @@ def evaluate_generation(chatbot, ground_truth):
     for i, qa in enumerate(ground_truth):
         query, expected_answer = qa["Question"], qa["Answer"]
         response = chatbot.generate_response(query)
+        response = response.split("My final answer is")[1]
         print('EXPECTED ANSWER ---', expected_answer, '---', 'RESPONSE ---', response, '---')
         
         rouge_scores.append(rouge_l_score(expected_answer, response))
         fuzzy_scores.append(fuzzy_match(expected_answer, response))
-
-        if i > 5:
-            break
     
     avg_rouge = sum(rouge_scores) / len(rouge_scores)
     avg_fuzzy = sum(fuzzy_scores) / len(fuzzy_scores)
@@ -115,14 +110,14 @@ if __name__ == "__main__":
     retriever = DocumentRetriever()
     chatbot = RAGChatbot()
     
-    print("Evaluating Retrieval...")
-    evaluate_retrieval(retriever, ground_truth, top_k=5)
+    # print("Evaluating Retrieval...")
+    # evaluate_retrieval(retriever, ground_truth, top_k=5)
     
     print("Evaluating Response Generation...")
     evaluate_generation(chatbot, ground_truth)
     
-    print("Measuring Latency...")
-    measure_latency(chatbot, ground_truth)
+    # print("Measuring Latency...")
+    # measure_latency(chatbot, ground_truth)
     
     # print("Evaluating Faithfulness...")
     # evaluate_faithfulness(chatbot, retriever, ground_truth)

@@ -1,0 +1,69 @@
+EXPECTED ANSWER --- QAR 11.8 billion --- RESPONSE ---  11.8 billion. ---
+EXPECTED ANSWER --- QAR 5.1 billion --- RESPONSE ---  QAR 5.1 billion. ---
+EXPECTED ANSWER --- QAR 1.9 billion --- RESPONSE ---  1.9 billion QAR. ---
+EXPECTED ANSWER --- +1pp --- RESPONSE ---  1 percentage point. ---
+EXPECTED ANSWER --- QAR 4.1 billion --- RESPONSE ---  4.1 billion QAR. ---
+EXPECTED ANSWER --- Iraq, Algeria, Kuwait, Maldives, Tunisia --- RESPONSE ---  Iraq, Algeria, and Kuwait. ---
+EXPECTED ANSWER --- First NVIDIA Cloud Partner in MENA --- RESPONSE ---  Ooredoo secured a partnership with NVIDIA for AI technology deployment in H1 2024. ---
+EXPECTED ANSWER --- $23.5 billion per year --- RESPONSE ---  $23.5 billion. ---
+EXPECTED ANSWER --- $1 billion --- RESPONSE ---  1 billion USD. ---
+EXPECTED ANSWER --- 30% --- RESPONSE ---  1.601 billion QAR. ---
+EXPECTED ANSWER --- QAR 1.0 billion --- RESPONSE ---  1.0 billion QAR. ---
+EXPECTED ANSWER --- Iraq --- RESPONSE ---  Qatar. ---
+EXPECTED ANSWER --- 0.6x --- RESPONSE ---  0.6x. ---
+EXPECTED ANSWER --- +4% (normalized +14%) --- RESPONSE ---  10% increase YoY. ---
+EXPECTED ANSWER --- Palestine --- RESPONSE ---  Palestine. ---
+EXPECTED ANSWER --- 37% --- RESPONSE ---  that the percentage of Ooredoo's customers in Iraq cannot be determined without the total customer base. ---
+EXPECTED ANSWER --- Kuwait (3%) --- RESPONSE ---  Iraq. ---
+EXPECTED ANSWER --- Qatar, Tunisia, Kuwait --- RESPONSE ---  Qatar, Tunisia, and Kuwait. ---
+EXPECTED ANSWER --- QAR 2 billion --- RESPONSE ---  QAR 2 billion. ---
+EXPECTED ANSWER --- NVIDIA --- RESPONSE ---  NVIDIA. ---
+EXPECTED ANSWER --- USD 500 million --- RESPONSE ---  USD 500 million. ---
+EXPECTED ANSWER --- 5.24% --- RESPONSE ---  4.77%. ---
+EXPECTED ANSWER --- QAR 3.5 billion --- RESPONSE ---  QAR 3.5 billion. ---
+EXPECTED ANSWER --- Qatar (98.95%) --- RESPONSE ---  Maldives. ---
+EXPECTED ANSWER --- 49.7 million --- RESPONSE ---  49.7 million. ---
+EXPECTED ANSWER --- 52.14% --- RESPONSE ---  50.03%. ---
+EXPECTED ANSWER --- 6% --- RESPONSE ---  6%. ---
+EXPECTED ANSWER --- -10% --- RESPONSE ---  10%. ---
+EXPECTED ANSWER --- 41% --- RESPONSE ---  41%. ---
+EXPECTED ANSWER --- Iraq (+60.09%) --- RESPONSE ---  Iraq. ---
+EXPECTED ANSWER --- QAR 406 million --- RESPONSE ---  __. ---
+EXPECTED ANSWER --- One-time gain of QAR 118 million --- RESPONSE ---  __. ---
+EXPECTED ANSWER --- Maldives (54%) --- RESPONSE ---  Algeria with an EBITDA margin of 43%. ---
+EXPECTED ANSWER --- QAR 1.2 billion --- RESPONSE ---  __. ---
+EXPECTED ANSWER --- Iraq and Algeria --- RESPONSE ---  Algeria and Tunisia with 22% EBITDA growth. ---
+EXPECTED ANSWER --- 30% --- RESPONSE ---  __. ---
+EXPECTED ANSWER --- Iraq (+18%) --- RESPONSE ---  Qatar. ---
+EXPECTED ANSWER --- QAR 1.9 billion --- RESPONSE ---  __. ---
+EXPECTED ANSWER --- QAR 17.7 billion --- RESPONSE ---  17.7 billion QAR. ---
+EXPECTED ANSWER --- QAR 2.9 billion --- RESPONSE ---  2.9 billion. ---
+EXPECTED ANSWER --- QAR 5.8 billion --- RESPONSE ---  QAR 5.8 billion. ---
+EXPECTED ANSWER --- QAR 7.7 billion --- RESPONSE ---  that the information does not specify Ooredoo's EBITDA for 9M 2024. ---
+EXPECTED ANSWER --- 44% --- RESPONSE ---  44%. ---
+EXPECTED ANSWER --- +1% YoY --- RESPONSE ---  +1%. ---
+EXPECTED ANSWER --- Algeria (+22%) --- RESPONSE ---  Iraq. ---
+EXPECTED ANSWER --- Iraq (+15%) --- RESPONSE ---  Iraq. ---
+EXPECTED ANSWER --- 50.7 million (excluding Myanmar) --- RESPONSE ---  150.6 million. ---
+EXPECTED ANSWER --- USD 500 million --- RESPONSE ---  500 million USD. ---
+EXPECTED ANSWER --- USD 500 million bond issuance --- RESPONSE ---  QAR 2 billion financing deal secured for data centre expansion. ---
+EXPECTED ANSWER --- 0.6x --- RESPONSE ---  -0.3x. ---
+EXPECTED ANSWER --- QAR 3.5 billion --- RESPONSE ---  QAR 3.5 billion. ---
+EXPECTED ANSWER --- Qatar, Tunisia, Kuwait --- RESPONSE ---  Qatar, Tunisia, and Kuwait. ---
+EXPECTED ANSWER --- QAR 2 billion --- RESPONSE ---  QAR 2 billion. ---
+EXPECTED ANSWER --- 59.1% --- RESPONSE ---  59.1%. ---
+EXPECTED ANSWER --- Kuwait (3%) --- RESPONSE ---  Kuwait. ---
+EXPECTED ANSWER --- Palestine --- RESPONSE ---  Iraq. ---
+EXPECTED ANSWER --- +16% --- RESPONSE ---  15%. ---
+EXPECTED ANSWER --- QAR 800 million --- RESPONSE ---  QAR 0.9 billion (overall capex) for Q3 2024 but specific digital transformation investment is not detailed. ---
+EXPECTED ANSWER --- Qatar (98.95%) --- RESPONSE ---  Maldives. ---
+EXPECTED ANSWER --- Iraq (+51.88%) --- RESPONSE ---  Iraq. ---
+EXPECTED ANSWER --- 93.22% --- RESPONSE ---  93.22%. ---
+EXPECTED ANSWER --- Iraq (+9%) --- RESPONSE ---  Ooredoo Iraq. ---
+EXPECTED ANSWER --- 50.7 million --- RESPONSE ---  __. ---
+EXPECTED ANSWER --- 37% --- RESPONSE ---  __. ---
+EXPECTED ANSWER --- Algeria (21%) --- RESPONSE ---  Kuwait. ---
+EXPECTED ANSWER --- 26% --- RESPONSE ---  26%. ---
+EXPECTED ANSWER --- Qatar (75%) --- RESPONSE ---  Iraq. ---
+EXPECTED ANSWER --- 5.06 billion GB --- RESPONSE ---  3,345,076,436 GB. ---
+ROUGE-L Score: 0.60, Fuzzy Match: 0.71

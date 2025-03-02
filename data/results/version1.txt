@@ -66,4 +66,4 @@ EXPECTED ANSWER --- Algeria (21%) --- RESPONSE ---  Kuwait. ---
 EXPECTED ANSWER --- 26% --- RESPONSE ---  26%. ---
 EXPECTED ANSWER --- Qatar (75%) --- RESPONSE ---  Iraq. ---
 EXPECTED ANSWER --- 5.06 billion GB --- RESPONSE ---  3,345,076,436 GB. ---
-ROUGE-L Score: 0.60, Fuzzy Match: 0.71
+ROUGE-L Score: 0.50, Fuzzy Match: 0.61

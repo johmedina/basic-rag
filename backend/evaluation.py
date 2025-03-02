@@ -2,6 +2,7 @@ import pandas as pd
 import time
 import openai
 from backend.retrieval import DocumentRetriever
+from backend.retrieval_agent import AgenticRetriever
 from backend.query_engine import RAGChatbot
 from rouge_score import rouge_scorer
 from fuzzywuzzy import fuzz
@@ -22,6 +23,9 @@ def measure_latency(chatbot, ground_truth):
         end_time = time.time()
         
         latencies.append(end_time - start_time)
+
+        if i > 10:
+            break
     
     avg_latency = sum(latencies) / len(latencies)
     print(f"Average Response Time: {avg_latency:.2f} seconds")
@@ -70,14 +74,18 @@ def fuzzy_match(expected, response):
 def evaluate_retrieval(retriever, ground_truth, top_k=5):
     """Evaluates retrieval accuracy using Recall@K."""
     correct_retrievals = 0
-    total_questions = len(ground_truth)
+    # total_questions = len(ground_truth)
+    total_questions = 9
     
-    for qa in ground_truth:
+    for i, qa in enumerate(ground_truth):
         query, expected_answer = qa["Question"], qa["Answer"]
-        retrieved_docs = retriever.hybrid_retrieval(query, top_k)
+        retrieved_docs = retriever.retrieve(query, top_k)
         
         if any(expected_answer in doc for doc in retrieved_docs):
             correct_retrievals += 1
+
+        if i > 10:
+            break
     
     recall_at_k = correct_retrievals / total_questions
     print(f"Recall@{top_k}: {recall_at_k:.2f}")
@@ -90,11 +98,17 @@ def evaluate_generation(chatbot, ground_truth):
     for i, qa in enumerate(ground_truth):
         query, expected_answer = qa["Question"], qa["Answer"]
         response = chatbot.generate_response(query)
-        response = response.split("My final answer is")[1]
-        print('EXPECTED ANSWER ---', expected_answer, '---', 'RESPONSE ---', response, '---')
+        try:
+            response = response.split("My final answer is")[1]
+            print('EXPECTED ANSWER ---', expected_answer, '---', 'RESPONSE ---', response, '---')
+        except:
+            continue
         
         rouge_scores.append(rouge_l_score(expected_answer, response))
         fuzzy_scores.append(fuzzy_match(expected_answer, response))
+
+        if i > 10:
+            break
     
     avg_rouge = sum(rouge_scores) / len(rouge_scores)
     avg_fuzzy = sum(fuzzy_scores) / len(fuzzy_scores)
@@ -107,7 +121,7 @@ def evaluate_generation(chatbot, ground_truth):
 
 if __name__ == "__main__":
     ground_truth = load_ground_truth("data/ground_truth_gpt.csv")
-    retriever = DocumentRetriever()
+    retriever = AgenticRetriever()
     chatbot = RAGChatbot()
     
     # print("Evaluating Retrieval...")

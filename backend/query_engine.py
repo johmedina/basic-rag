@@ -1,5 +1,6 @@
 from backend.retrieval import DocumentRetriever
 from backend.retrieval_agent import AgenticRetriever
+from backend.retrieval_hybrid import HybridAgenticRetriever
 from openai import OpenAI
 from backend.config import OPENAI_API_KEY
 import os
@@ -7,11 +8,11 @@ import os
 class RAGChatbot:
     def __init__(self):
         self.client = OpenAI(api_key=OPENAI_API_KEY)
-        self.retriever = AgenticRetriever()
+        self.retriever = HybridAgenticRetriever()
         self.retriever.load_index() 
 
     def generate_response(self, query):
-        retrieved_docs = self.retriever.retrieve(query)
+        retrieved_docs = self.retriever.hybrid_retrieve(query)
         # print('RETRIEVED DOCS ---', retrieved_docs, '---')
         if not retrieved_docs:
             return "Sorry, I couldn't find relevant information."

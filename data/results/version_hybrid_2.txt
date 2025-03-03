@@ -1,0 +1,260 @@
+Evaluating Retrieval...
+Expanded Query: Could you please provide the total revenue for Ooredoo for the first half of 2024?
+Expanded Query: Could you please provide me with Ooredoo's EBITDA figures for the first half of 2024?
+Expanded Query: Could you provide the net profit figures for Ooredoo for the first half of 2024?
+Expanded Query: What was the increase in Ooredoo's EBITDA margin for the first half of 2024?
+Expanded Query: Could you please provide the free cash flow for Ooredoo for the first half of 2024?
+Expanded Query: Which countries experienced the highest revenue growth during the first half of 2024?
+Expanded Query: Which significant AI partnership did Ooredoo establish in the first half of 2024?
+Expanded Query: What is the projected economic impact of Generative AI (GenAI) in the Gulf Cooperation Council (GCC) countries by the year 2030?
+Expanded Query: What is Ooredoo's projected investment in artificial intelligence and cloud services?
+Expanded Query: Could you provide the revenue contribution of Qatar to Ooredoo for the first half of 2024?
+Expanded Query: What is the total capital expenditure (Capex) investment reported by Ooredoo for the first half of 2024?
+Expanded Query: Which country had the highest number of customer additions for Ooredoo's network during the first half of 2024?
+Expanded Query: Please provide the latest financial report or press release from Ooredoo for the first half of 2024 to find the reported debt/EBITDA ratio.
+Expanded Query: What was the year-over-year change in Ooredoo's net profit for the first half of 2024?
+Expanded Query: Which region experienced a decline in revenue due to the conflict in the first half of 2024?
+Expanded Query: What is the percentage of Ooredoo's customer base located in Iraq?
+Expanded Query: Which country reported the lowest mobile churn rate for the first half of 2024?
+Expanded Query: Which countries had completed data center carve-outs by the first half of 2024?
+Expanded Query: What was the amount raised by Ooredoo through financing in the first half of 2024?
+Expanded Query: Which company is Ooredoo partnering with to develop AI technology solutions?
+Expanded Query: What was the total amount of Ooredoo's bond issuance during the first half of 2024?
+Expanded Query: What was the dividend yield for Ooredoo in the year 2023?
+Expanded Query: What is Ooredoo's projected total capital expenditure (Capex) for the fiscal year 2024?
+Expanded Query: Which country achieved the highest population coverage of 5G networks in the first half of 2024?
+Expanded Query: What is the number of customers Ooredoo reported for the first half of 2024, excluding those from Myanmar?
+Expanded Query: What proportion of Ooredoo's total network traffic in Kuwait was generated via 4G technology?
+Expanded Query: Could you provide the latest data on Ooredoo's customer churn rate in Qatar?
+Expanded Query: What was the impact of the one-time bad debt provision on Kuwait's EBITDA?
+Expanded Query: Please provide the EBITDA margin for Tunisia for the first half of 2024.
+Expanded Query: Which country experienced the highest growth in data volume during the first half of 2024?
+Expanded Query: Could you please provide the EBITDA figures for Ooredoo in Kuwait for the first half of 2024?
+Expanded Query: What was the impact of Myanmar's exit on Ooredoo's financial performance in the first half of 2024?
+Expanded Query: Which Ooredoo market reported the highest EBITDA margin?
+Expanded Query: What is the total investment made by Ooredoo in network expansion initiatives in Iraq?
+Expanded Query: Which countries experienced the highest EBITDA growth during the first half of 2024?
+Expanded Query: What is the percentage of Ooredoo's revenue generated from mobile services in Qatar?
+Expanded Query: Which country experienced the highest revenue growth during the first half of 2024?
+Expanded Query: Please provide the latest free cash flow data for Ooredoo for Q2 2024.
+Expanded Query: What is the total revenue reported by Ooredoo for the first nine months of 2024?
+Expanded Query: Please provide the latest information on Ooredoo's net profit for the first nine months of 2024.
+Expanded Query: Could you please provide the free cash flow figures for Ooredoo for the first nine months of 2024?
+Expanded Query: Could you provide the EBITDA for Ooredoo for the first nine months of 2024?
+Expanded Query: Could you please provide the name of the company or specific financial report you are referring to for the EBITDA margin for the first nine months of 2024?
+Expanded Query: Please provide the Q3 2024 revenue growth data for Ooredoo.
+Expanded Query: To find out which country experienced the highest EBITDA growth in Q3 2024, please specify the required financial data sources, including recent reports or databases that track country-specific EBITDA growth metrics.
+Expanded Query: What country experienced the highest revenue growth in the third quarter of 2024?
+Expanded Query: Could you please provide the total number of customers for Ooredoo in the third quarter of 2024?
+Expanded Query: What was the total amount raised by Ooredoo through bond issuance in the third quarter of 2024?
+Expanded Query: What significant financial transaction did Ooredoo execute in the third quarter of 2024?
+Expanded Query: Could you please provide Ooredoo's net debt/EBITDA ratio for the third quarter of 2024?
+Expanded Query: What is the projected capital expenditure (Capex) for Ooredoo in the fiscal year 2024?
+Expanded Query: Which countries had completed data center carve-outs by the third quarter of 2024?
+Expanded Query: What was the total financing amount secured by Ooredoo in the third quarter of 2024?
+Expanded Query: What is the dividend payout ratio for Ooredoo in the year 2023?
+Expanded Query: Please provide information on which country experienced the lowest mobile churn rate in the third quarter of 2024.
+Expanded Query: Which region experienced a decline in financial performance due to war in the third quarter of 2024?
+Expanded Query: Could you provide the revenue growth figures for Algeria in the third quarter of 2024?
+Expanded Query: What was the amount invested by Ooredoo in digital transformation during the third quarter of 2024?
+Expanded Query: To find out which country had the highest 5G population coverage in Q3 2024, you might look for data from the latest telecommunications reports or market research studies that focus on 5G deployment and coverage statistics. Consider searching for keywords like
+Expanded Query: Which country experienced the most significant growth in data volume during the third quarter of 2024?
+Expanded Query: What is the percentage of 4G network traffic for Ooredoo in Tunisia?
+Expanded Query: Which country experienced the largest growth in customer base during the third quarter of 2024?
+Expanded Query: Can you provide the number of customers Ooredoo had in Q3 2024, excluding those from Myanmar?
+Expanded Query: What was the percentage of Ooredoo's customer base located in Iraq?
+Expanded Query: Which country exhibited the highest capital expenditure (Capex) intensity in the third quarter of 2024?
+Expanded Query: Please provide the EBITDA margin for Kuwait for the third quarter of 2024.
+Expanded Query: Which country recorded the highest percentage of digital recharges in the third quarter of 2024?
+Expanded Query: Please provide the total data volume for Ooredoo's network during the third quarter of 2024.
+Recall@5: 0.54
+Evaluating Response Generation...
+Expanded Query: What is the total revenue for Ooredoo in the first half of 2024?
+EXPECTED ANSWER --- QAR 11.8 billion --- RESPONSE ---  QAR 11.8 billion. ---
+Expanded Query: What is the EBITDA of Ooredoo for the first half of 2024?
+EXPECTED ANSWER --- QAR 5.1 billion --- RESPONSE ---  5.114 billion QAR. ---
+Expanded Query: What is Ooredoo's net profit for the first half of 2024?
+EXPECTED ANSWER --- QAR 1.9 billion --- RESPONSE ---  1.9 billion. ---
+Expanded Query: What was the increase in Ooredoo's EBITDA margin for the first half of 2024?
+EXPECTED ANSWER --- +1pp --- RESPONSE ---  1pp. ---
+Expanded Query: What is the reported free cash flow for Ooredoo in the first half of 2024?
+EXPECTED ANSWER --- QAR 4.1 billion --- RESPONSE ---  QAR 4.1 billion. ---
+Expanded Query: Which countries experienced the highest revenue growth during the first half of 2024?
+EXPECTED ANSWER --- Iraq, Algeria, Kuwait, Maldives, Tunisia --- RESPONSE ---  Algeria, Iraq. ---
+Expanded Query: What significant AI collaboration did Ooredoo establish in the first half of 2024?
+EXPECTED ANSWER --- First NVIDIA Cloud Partner in MENA --- RESPONSE ---  Ooredoo secured a partnership with NVIDIA to deploy advanced AI technology across its data centres. ---
+Expanded Query: What is the projected economic impact of Generative AI in the GCC region by the year 2030?
+EXPECTED ANSWER --- $23.5 billion per year --- RESPONSE ---  $23.5 billion. ---
+Expanded Query: What is Ooredoo's projected investment in artificial intelligence and cloud services?
+EXPECTED ANSWER --- $1 billion --- RESPONSE ---  1 billion USD. ---
+Expanded Query: What was Ooredoo's revenue contribution from Qatar in the first half of 2024?
+Expanded Query: What is the total capital expenditure (Capex) investment made by Ooredoo in the first half of 2024?
+EXPECTED ANSWER --- QAR 1.0 billion --- RESPONSE ---  1.0 billion QAR. ---
+Expanded Query: Which country had the highest customer contribution to Ooredoo's network in the first half of 2024?
+Expanded Query: What is Ooredoo's debt to EBITDA ratio for the first half of 2024?
+Expanded Query: What was the year-over-year change in Ooredoo's net profit for the first half of 2024?
+EXPECTED ANSWER --- +4% (normalized +14%) --- RESPONSE ---  4% increase YoY, QAR 1.9 billion. ---
+Expanded Query: In which region was revenue affected by the war during the first half of 2024?
+EXPECTED ANSWER --- Palestine --- RESPONSE ---  Palestine. ---
+Expanded Query: What is the percentage of Ooredoo's customer base located in Iraq?
+Expanded Query: What country experienced the lowest mobile churn rate in the first half of 2024?
+EXPECTED ANSWER --- Kuwait (3%) --- RESPONSE ---  3%. ---
+Expanded Query: Which countries completed data center carve-outs by the end of the first half of 2024?
+EXPECTED ANSWER --- Qatar, Tunisia, Kuwait --- RESPONSE ---  Qatar, Tunisia, and Kuwait. ---
+Expanded Query: What was the amount raised by Ooredoo in their financing deal during the first half of 2024?
+EXPECTED ANSWER --- QAR 2 billion --- RESPONSE ---  QAR 2 billion. ---
+Expanded Query: Which company is Ooredoo partnering with for artificial intelligence technology?
+EXPECTED ANSWER --- NVIDIA --- RESPONSE ---  NVIDIA. ---
+Expanded Query: What was the amount of Ooredoo's bond issuance in the first half of 2024?
+EXPECTED ANSWER --- USD 500 million --- RESPONSE ---  USD 500 million. ---
+Expanded Query: What was the dividend yield of Ooredoo for the year 2023?
+EXPECTED ANSWER --- 5.24% --- RESPONSE ---  4.77%. ---
+Expanded Query: What is the anticipated total capital expenditure (Capex) for Ooredoo in the fiscal year 2024?
+EXPECTED ANSWER --- QAR 3.5 billion --- RESPONSE ---  QAR 3.5 billion. ---
+Expanded Query: Which country achieved the highest 5G population coverage in the first half of 2024?
+Expanded Query: What was the number of Ooredoo customers in the first half of 2024, excluding those from Myanmar?
+EXPECTED ANSWER --- 49.7 million --- RESPONSE ---  49.7 million. ---
+Expanded Query: What is the percentage of Ooredoo's network traffic in Kuwait that utilizes 4G connectivity?
+EXPECTED ANSWER --- 52.14% --- RESPONSE ---  50.03%. ---
+Expanded Query: What is the customer churn rate for Ooredoo in Qatar?
+EXPECTED ANSWER --- 6% --- RESPONSE ---  6% for mobile and 2% for fixed. ---
+Expanded Query: What was the impact of a one-time bad debt provision on Kuwait's EBITDA decline?
+EXPECTED ANSWER --- -10% --- RESPONSE ---  10%. ---
+Expanded Query: What is the EBITDA margin for Tunisia in the first half of 2024?
+EXPECTED ANSWER --- 41% --- RESPONSE ---  41%. ---
+Expanded Query: Which country experienced the greatest increase in data volume during the first half of 2024?
+EXPECTED ANSWER --- Iraq (+60.09%) --- RESPONSE ---  Iraq. ---
+Expanded Query: What is the EBITDA for Ooredoo in Kuwait for the first half of 2024?
+Expanded Query: What effects did Myanmar's exit have on Ooredoo's financial performance in the first half of 2024?
+EXPECTED ANSWER --- One-time gain of QAR 118 million --- RESPONSE ---   __. ---
+Expanded Query: Which Ooredoo market reported the highest EBITDA margin?
+EXPECTED ANSWER --- Maldives (54%) --- RESPONSE ---  54%. ---
+Expanded Query: What is the amount invested by Ooredoo in network expansion initiatives in Iraq?
+Expanded Query: Which countries experienced the most significant EBITDA growth in the first half of 2024?
+EXPECTED ANSWER --- Iraq and Algeria --- RESPONSE ---  Algeria, Kuwait, Tunisia. ---
+Expanded Query: What is the percentage of Ooredoo's revenue generated from mobile services in Qatar?
+Expanded Query: Which country experienced the highest revenue growth during the first half of 2024?
+EXPECTED ANSWER --- Iraq (+18%) --- RESPONSE ---  Algeria. ---
+Expanded Query: What is Ooredoo's free cash flow for the second quarter of 2024?
+Expanded Query: What is the total revenue reported by Ooredoo for the first nine months of 2024?
+EXPECTED ANSWER --- QAR 17.7 billion --- RESPONSE ---  QAR 17.7 billion. ---
+Expanded Query: What is Ooredoo’s net profit for the first nine months of 2024?
+EXPECTED ANSWER --- QAR 2.9 billion --- RESPONSE ---  QAR 2.9 billion. ---
+Expanded Query: What was the free cash flow of Ooredoo for the first nine months of 2024?
+EXPECTED ANSWER --- QAR 5.8 billion --- RESPONSE ---  QAR 5.8 billion. ---
+Expanded Query: What is Ooredoo's EBITDA for the first nine months of 2024?
+EXPECTED ANSWER --- QAR 7.7 billion --- RESPONSE ---  7.7 billion. ---
+Expanded Query: What is the EBITDA margin for the first nine months of 2024?
+EXPECTED ANSWER --- 44% --- RESPONSE ---  44%. ---
+Expanded Query: What was the revenue growth rate for Ooredoo in the third quarter of 2024?
+EXPECTED ANSWER --- +1% YoY --- RESPONSE ---  1%. ---
+Expanded Query: Which country experienced the highest EBITDA growth in the third quarter of 2024?
+Expanded Query: Which country experienced the highest revenue growth in the third quarter of 2024?
+EXPECTED ANSWER --- Iraq (+15%) --- RESPONSE ---  Algeria. ---
+Expanded Query: What is Ooredoo's total customer base for the third quarter of 2024?
+Expanded Query: What was the amount raised by Ooredoo through bond issuance in the third quarter of 2024?
+EXPECTED ANSWER --- USD 500 million --- RESPONSE ---  USD 500 million. ---
+Expanded Query: What significant financial transaction did Ooredoo finalize in the third quarter of 2024?
+EXPECTED ANSWER --- USD 500 million bond issuance --- RESPONSE ---  QAR 2 billion financing deal. ---
+Expanded Query: What is Ooredoo's net debt to EBITDA ratio for Q3 2024?
+Expanded Query: What is the projected capital expenditure (Capex) for Ooredoo in fiscal year 2024?
+EXPECTED ANSWER --- QAR 3.5 billion --- RESPONSE ---  QAR 3.5 billion. ---
+Expanded Query: Which countries had completed data center carve-outs by the end of Q3 2024?
+EXPECTED ANSWER --- Qatar, Tunisia, Kuwait --- RESPONSE ---  Qatar, Tunisia, and Kuwait. ---
+Expanded Query: What was the amount of financing secured by Ooredoo in the third quarter of 2024?
+EXPECTED ANSWER --- QAR 2 billion --- RESPONSE ---  QAR 2 billion. ---
+Expanded Query: What is the dividend payout ratio for Ooredoo in 2023?
+EXPECTED ANSWER --- 59.1% --- RESPONSE ---  59.1%. ---
+Expanded Query: What country experienced the lowest mobile churn rate in the third quarter of 2024?
+Expanded Query: Which region experienced a decline in financial performance due to war in the third quarter of 2024?
+EXPECTED ANSWER --- Palestine --- RESPONSE ---  Oman. ---
+Expanded Query: What is the revenue growth rate for Algeria in the third quarter of 2024?
+EXPECTED ANSWER --- +16% --- RESPONSE ---  16%. ---
+Expanded Query: What was Ooredoo's investment amount in digital transformation during the third quarter of 2024?
+Expanded Query: What country experienced the highest 5G population coverage in the third quarter of 2024?
+EXPECTED ANSWER --- Qatar (98.95%) --- RESPONSE ---  100%. ---
+Expanded Query: Which country experienced the largest increase in data volume during the third quarter of 2024?
+EXPECTED ANSWER --- Iraq (+51.88%) --- RESPONSE ---  Iraq. ---
+Expanded Query: What is the percentage of network traffic on 4G for Ooredoo in Tunisia?
+EXPECTED ANSWER --- 93.22% --- RESPONSE ---  93.22%. ---
+Expanded Query: Which country experienced the highest growth in customer base during the third quarter of 2024?
+EXPECTED ANSWER --- Iraq (+9%) --- RESPONSE ---  Algeria. ---
+Expanded Query: What is the number of Ooredoo customers in Q3 2024, excluding those from Myanmar?
+Expanded Query: What was the percentage of Ooredoo's customer base located in Iraq?
+Expanded Query: What country exhibited the highest capital expenditure intensity in the third quarter of 2024?
+EXPECTED ANSWER --- Algeria (21%) --- RESPONSE ---  24%. ---
+Expanded Query: What is the EBITDA margin for Kuwait in the third quarter of 2024?
+EXPECTED ANSWER --- 26% --- RESPONSE ---  26%. ---
+Expanded Query: What country experienced the highest percentage of digital recharge in the third quarter of 2024?
+Expanded Query: What is the total data volume recorded on Ooredoo’s network for the third quarter of 2024?
+ROUGE-L Score: 0.65, Fuzzy Match: 0.71
+Measuring Latency...
+Expanded Query: What is Ooredoo's total revenue reported for the first half of 2024?
+Expanded Query: What is Ooredoo's EBITDA for the first half of 2024?
+Expanded Query: What is Ooredoo's net profit for the first half of 2024?
+Expanded Query: What was the change in Ooredoo's EBITDA margin for the first half of 2024?
+Expanded Query: What is Ooredoo's free cash flow for the first half of 2024?
+Expanded Query: Which countries experienced the most significant revenue growth in the first half of 2024?
+Expanded Query: What significant AI partnership did Ooredoo establish in the first half of 2024?
+Expanded Query: What is the projected economic impact of Generative AI in the GCC region by 2030?
+Expanded Query: What is Ooredoo's anticipated investment in artificial intelligence and cloud services?
+Expanded Query: What was Ooredoo's revenue contribution from Qatar in the first half of 2024?
+Expanded Query: What is the total capital expenditure (Capex) investment made by Ooredoo in the first half of 2024?
+Expanded Query: Which country had the highest customer contribution to Ooredoo's network in the first half of 2024?
+Expanded Query: What is Ooredoo's reported debt to EBITDA ratio for the first half of 2024?
+Expanded Query: What was the Year-over-Year change in Ooredoo's net profit for the first half of 2024?
+Expanded Query: Which region experienced a decline in revenue as a result of the war during the first half of 2024?
+Expanded Query: What is the percentage of Ooredoo's customer base located in Iraq?
+Expanded Query: What country reported the lowest mobile churn rate in the first half of 2024?
+Expanded Query: What countries completed data center carve-outs by the first half of 2024?
+Expanded Query: What was the amount raised by Ooredoo through a financing deal in the first half of 2024?
+Expanded Query: Which company is Ooredoo partnering with for artificial intelligence technology?
+Expanded Query: What is the amount of Ooredoo's bond issuance for the first half of 2024?
+Expanded Query: What is the dividend yield for Ooredoo in the year 2023?
+Expanded Query: What is the projected total capital expenditure (Capex) for Ooredoo in the fiscal year 2024?
+Expanded Query: Which country achieved the greatest 5G population coverage in the first half of 2024?
+Expanded Query: What was the number of Ooredoo customers in the first half of 2024, excluding those from Myanmar?
+Expanded Query: What was the percentage of Ooredoo's network traffic on 4G in Kuwait?
+Expanded Query: What is the customer churn rate for Ooredoo in Qatar?
+Expanded Query: What was the decline in Kuwait's EBITDA attributable to a one-time bad debt provision?
+Expanded Query: What is the EBITDA margin for Tunisia in the first half of 2024?
+Expanded Query: Which country experienced the most significant growth in data volume during the first half of 2024?
+Expanded Query: What is the EBITDA for Ooredoo in Kuwait for the first half of 2024?
+Expanded Query: What was the effect of Myanmar's exit on Ooredoo's financial results for the first half of 2024?
+Expanded Query: Which Ooredoo market reported the highest EBITDA margin?
+Expanded Query: What was the amount invested by Ooredoo in the network expansion projects in Iraq?
+Expanded Query: Which countries experienced the most significant EBITDA growth in the first half of 2024?
+Expanded Query: What is the percentage of Ooredoo's revenue derived from mobile services in Qatar?
+Expanded Query: Which country experienced the most significant revenue growth in the first half of 2024?
+Expanded Query: What was Ooredoo's free cash flow for the second quarter of 2024?
+Expanded Query: What is Ooredoo's total revenue for the first nine months of 2024?
+Expanded Query: What is Ooredoo's net profit reported for the first nine months of 2024?
+Expanded Query: What is Ooredoo's free cash flow for the first nine months of 2024?
+Expanded Query: What is Ooredoo's EBITDA for the first nine months of 2024?
+Expanded Query: What is the EBITDA margin for the first nine months of 2024?
+Expanded Query: What is Ooredoo's revenue growth for the third quarter of 2024?
+Expanded Query: What country experienced the highest EBITDA growth in the third quarter of 2024?
+Expanded Query: Which country experienced the highest revenue growth in the third quarter of 2024?
+Expanded Query: What is Ooredoo's total number of customers for the third quarter of 2024?
+Expanded Query: What was the amount raised by Ooredoo from bond issuance in the third quarter of 2024?
+Expanded Query: What significant financial transaction did Ooredoo finalize in the third quarter of 2024?
+Expanded Query: What is the net debt/EBITDA ratio for Ooredoo in the third quarter of 2024?
+Expanded Query: What is the projected capital expenditure (Capex) for Ooredoo in the fiscal year 2024?
+Expanded Query: What countries had completed data center carve-outs by the end of Q3 2024?
+Expanded Query: What was the amount of financing secured by Ooredoo in the third quarter of 2024?
+Expanded Query: What is the dividend payout ratio for Ooredoo in 2023?
+Expanded Query: Which country reported the lowest mobile churn rate in the third quarter of 2024?
+Expanded Query: Which region experienced a decline in financial performance due to war in the third quarter of 2024?
+Expanded Query: What is the revenue growth of Algeria reported for Q3 2024?
+Expanded Query: What was Ooredoo's investment in digital transformation for the third quarter of 2024?
+Expanded Query: Which country achieved the highest population coverage for 5G in the third quarter of 2024?
+Expanded Query: Which country experienced the most significant increase in data volume during the third quarter of 2024?
+Expanded Query: What is the percentage of network traffic attributed to 4G for Ooredoo in Tunisia?
+Expanded Query: Which country experienced the largest growth in customer base during Q3 2024?
+Expanded Query: What was the number of Ooredoo customers in Q3 2024, excluding those from Myanmar?
+Expanded Query: What percentage of Ooredoo's total customer base is represented by its customers in Iraq?
+Expanded Query: What country exhibited the highest capital expenditure (Capex) intensity in the third quarter of 2024?
+Expanded Query: What is the EBITDA margin for Kuwait in the third quarter of 2024?
+Expanded Query: Which country recorded the highest percentage of digital recharges in the third quarter of 2024?
+Expanded Query: What was the total data volume for Ooredoo's network during the third quarter of 2024?
+Average Response Time: 1.97 seconds

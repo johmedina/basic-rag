@@ -4,27 +4,28 @@ import os
 import json
 from sentence_transformers import SentenceTransformer
 from openai import OpenAI
+from backend.graph_rag import KnowledgeGraph 
 from backend.config import OPENAI_API_KEY
 
-class AgenticRetriever:
+class HybridAgenticRetriever:
     def __init__(self, embedding_model="sentence-transformers/all-MiniLM-L6-v2", index_path="data/embeddings/index.faiss"):
         self.client = OpenAI(api_key=OPENAI_API_KEY)
         self.model = SentenceTransformer(embedding_model)
         self.index_path = index_path
         self.index = None
         self.text_data = []
+        self.knowledge_graph = KnowledgeGraph()  
         self.load_index()
 
     def agentic_query_expansion(self, query):
-        """ Uses an LLM agent to improve query formulation """
-        system_prompt = "You are an expert in financial data retrieval. Rewrite the query for better document retrieval."
+        system_prompt = "You are an AI expert in financial data retrieval. Rephrase this query to optimize document search."
         gpt_response = self.client.chat.completions.create(
             model="gpt-4o-mini",
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": query}
             ],
-            max_tokens=50
+            max_tokens=200
         )
         return gpt_response.choices[0].message.content.strip()
 
@@ -57,12 +58,9 @@ class AgenticRetriever:
             
             self.create_index(text_data)
 
-    def retrieve(self, query, top_k=5):
-        """Expands query using an agent and retrieves relevant text chunks."""
-        improved_query = self.agentic_query_expansion(query)
-        print(f"Expanded Query: {improved_query}")
-
-        query_embedding = self.model.encode([improved_query], convert_to_numpy=True)
+    def retrieve_faiss(self, query, top_k=5):
+        """Performs FAISS-based retrieval"""
+        query_embedding = self.model.encode([query], convert_to_numpy=True)
         document_embeddings = np.load("data/embeddings/text_embeddings.npy")
 
         similarities = np.dot(document_embeddings, query_embedding.T).flatten()
@@ -71,8 +69,46 @@ class AgenticRetriever:
         retrieved_chunks = [self.text_data[i] for i in top_indices if i < len(self.text_data)]
         return retrieved_chunks
 
+    
+    def retrieve_graph(self, query):
+        """Retrieves related financial entities from the knowledge graph and ranks them."""
+        entity = query.split()[0]  # Extract first word as entity (basic approach)
+        related_entities = self.knowledge_graph.query_graph(entity)
+
+        # Rank related entities by relevance
+        ranked_entities = self.rank_entities(query, related_entities)
+        
+        return ranked_entities[:3]  # Return top 3 most relevant entities
+
+    def rank_entities(self, query, entities):
+        """Ranks entities based on their relevance to the query."""
+        query_embedding = self.model.encode([query], convert_to_numpy=True)
+        entity_embeddings = self.model.encode(entities, convert_to_numpy=True)
+
+        similarities = np.dot(entity_embeddings, query_embedding.T).flatten()
+        ranked_indices = np.argsort(similarities)[::-1]
+        
+        return [entities[i] for i in ranked_indices]
+
+
+    def hybrid_retrieve(self, query, top_k=5):
+        """Combines Agentic Query Expansion, FAISS retrieval, and Graph RAG retrieval"""
+        improved_query = self.agentic_query_expansion(query)
+        print(f"Expanded Query: {improved_query}")
+
+        faiss_results = self.retrieve_faiss(improved_query, top_k)
+        
+        # Use Graph RAG only if FAISS doesn’t return enough results
+        if len(faiss_results) < top_k:
+            graph_results = self.retrieve_graph(improved_query)
+            # Prioritize FAISS, add top 2 Graph results
+            combined_results = faiss_results + graph_results[:2]  
+        else:
+            combined_results = faiss_results
+
+        return list(set(combined_results)) 
 
 if __name__ == "__main__":
-    retriever = AgenticRetriever()
+    retriever = HybridAgenticRetriever()
     retriever.load_index()
-    print(retriever.retrieve("financial report analysis"))
+    print(retriever.hybrid_retrieve("Ooredoo revenue"))

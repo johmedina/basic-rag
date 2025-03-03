@@ -12,6 +12,7 @@ def load_ground_truth(csv_path="data/ground_truth_gpt.csv"):
     df = pd.read_csv(csv_path)
     return df.to_dict(orient="records")
 
+
 def measure_latency(chatbot, ground_truth):
     """Measures chatbot response latency."""
     latencies = []
@@ -24,15 +25,14 @@ def measure_latency(chatbot, ground_truth):
         
         latencies.append(end_time - start_time)
 
-        if i > 10:
-            break
     
     avg_latency = sum(latencies) / len(latencies)
     print(f"Average Response Time: {avg_latency:.2f} seconds")
     return avg_latency
 
+
 def evaluate_faithfulness(chatbot, retriever, ground_truth):
-    """Uses GPT-4 to evaluate factual consistency between retrieved docs and generated answers."""
+    """Uses GPT-4o-mini to evaluate factual consistency between retrieved docs and generated answers."""
     client = openai.OpenAI()
     scores = []
     
@@ -64,18 +64,20 @@ def evaluate_faithfulness(chatbot, retriever, ground_truth):
     print(f"Average Faithfulness Score: {avg_faithfulness:.2f}")
     return avg_faithfulness
 
+
 def rouge_l_score(expected, response):
     scorer = rouge_scorer.RougeScorer(["rougeL"], use_stemmer=True)
     return scorer.score(expected, response)["rougeL"].fmeasure
 
+
 def fuzzy_match(expected, response):
     return fuzz.token_sort_ratio(expected, response) / 100  
+
 
 def evaluate_retrieval(retriever, ground_truth, top_k=5):
     """Evaluates retrieval accuracy using Recall@K."""
     correct_retrievals = 0
-    # total_questions = len(ground_truth)
-    total_questions = 9
+    total_questions = len(ground_truth)
     
     for i, qa in enumerate(ground_truth):
         query, expected_answer = qa["Question"], qa["Answer"]
@@ -83,13 +85,11 @@ def evaluate_retrieval(retriever, ground_truth, top_k=5):
         
         if any(expected_answer in doc for doc in retrieved_docs):
             correct_retrievals += 1
-
-        if i > 10:
-            break
     
     recall_at_k = correct_retrievals / total_questions
     print(f"Recall@{top_k}: {recall_at_k:.2f}")
     return recall_at_k
+
 
 def evaluate_generation(chatbot, ground_truth):
     """Evaluates chatbot responses using ROUGE-L and Fuzzy Matching."""
@@ -106,9 +106,6 @@ def evaluate_generation(chatbot, ground_truth):
         
         rouge_scores.append(rouge_l_score(expected_answer, response))
         fuzzy_scores.append(fuzzy_match(expected_answer, response))
-
-        if i > 10:
-            break
     
     avg_rouge = sum(rouge_scores) / len(rouge_scores)
     avg_fuzzy = sum(fuzzy_scores) / len(fuzzy_scores)
@@ -117,21 +114,36 @@ def evaluate_generation(chatbot, ground_truth):
     return avg_rouge, avg_fuzzy
 
 
-
+def human_analysis(chatbot, ground_truth, filename="data/chatbot_analysis.csv"):
+    """Record ground truth answers and chatbot answers for human analysis"""
+    data = []
+    
+    for i, qa in enumerate(ground_truth):
+        query, expected_answer = qa["Question"], qa["Answer"]
+        response = chatbot.generate_response(query)
+        data.append([query, expected_answer, response])
+    
+    df = pd.DataFrame(data, columns=["Question", "Ground Truth Answer", "Chatbot Answer"])
+    df.to_csv(filename, index=False, encoding="utf-8")
+    
+    print(f"Analysis saved to {filename}")
 
 if __name__ == "__main__":
     ground_truth = load_ground_truth("data/ground_truth_gpt.csv")
     retriever = AgenticRetriever()
     chatbot = RAGChatbot()
     
-    # print("Evaluating Retrieval...")
-    # evaluate_retrieval(retriever, ground_truth, top_k=5)
+    print("Evaluating Retrieval...")
+    evaluate_retrieval(retriever, ground_truth, top_k=5)
     
     print("Evaluating Response Generation...")
     evaluate_generation(chatbot, ground_truth)
     
-    # print("Measuring Latency...")
-    # measure_latency(chatbot, ground_truth)
+    print("Measuring Latency...")
+    measure_latency(chatbot, ground_truth)
+
+    print("Human analysis csv creation")
+    human_analysis(chatbot, ground_truth)
     
     # print("Evaluating Faithfulness...")
     # evaluate_faithfulness(chatbot, retriever, ground_truth)

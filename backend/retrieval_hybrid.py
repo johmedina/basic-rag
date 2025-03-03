@@ -70,6 +70,7 @@ class HybridAgenticRetriever:
         top_indices = np.argsort(similarities)[-top_k:][::-1]
         
         retrieved_chunks = [self.text_data[i] for i in top_indices if i < len(self.text_data)]
+        # print('RETRIEVED CHUNKS ---', retrieved_chunks, '---')
         return retrieved_chunks
 
     
@@ -96,13 +97,12 @@ class HybridAgenticRetriever:
 
     def hybrid_retrieve(self, query, top_k=5):
         """Combines Agentic Query Expansion, FAISS retrieval, and Graph RAG retrieval"""
-        improved_query = self.agentic_query_expansion(query)
-        print(f"Expanded Query: {improved_query}")
-
-        faiss_results = self.retrieve_faiss(improved_query, top_k)
+        faiss_results = self.retrieve_faiss(query, top_k)
         
-        # Use Graph RAG only if FAISS doesn’t return enough results
+        # Use Graph RAG and Agent LLM only if FAISS doesn’t return enough results
         if len(faiss_results) < top_k:
+            improved_query = self.agentic_query_expansion(query)
+            print(f"Expanded Query: {improved_query}")
             graph_results = self.retrieve_graph(improved_query)
             # Prioritize FAISS, add top 2 Graph results
             combined_results = faiss_results + graph_results[:2]  

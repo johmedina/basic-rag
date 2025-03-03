@@ -18,7 +18,7 @@ class RAGChatbot:
             return "Sorry, I couldn't find relevant information."
         
         prompt = f"""
-            Answer the query: {query} **ONLY using the following retrieved information**: {retrieved_docs}.
+            Answer the query: {query}. ONLY use the following retrieved information: {retrieved_docs}.
             If you cannot find the answer, say 'Apologies, but I do not have enough information. Please ask another query.'"""
         # print('PROMPT --- ', prompt, '---')
 
@@ -27,8 +27,9 @@ class RAGChatbot:
             messages=[
                 {"role": "system", "content": 
                   """You are an AI assistant for the Ooredoo Group. You will be answering mostly financial related questions.
-                  Your answer should be **concise and fact-based**, directly matching the expected answer format.
-                  Your answer should end with: My final answer is __."""
+                  Your answer should be **fact-based**, directly matching the expected answer format.
+                  Your answer should end with: My final answer is ___.
+                  """
                 },
                 {"role": "user", "content": prompt}
             ],

@@ -2,14 +2,14 @@ import networkx as nx
 import json
 import spacy
 import os
-import fitz  # PyMuPDF for reading PDFs
+import fitz  
 
 class KnowledgeGraph:
     def __init__(self, graph_path="data/graph_kg.json", pdf_folder="data/documents"):
         self.graph = nx.Graph()
         self.graph_path = graph_path
         self.pdf_folder = pdf_folder
-        self.nlp = spacy.load("en_core_web_sm")  # Load NLP model for entity extraction
+        self.nlp = spacy.load("en_core_web_sm")  
         self.load_graph()
 
     def extract_text_from_pdf(self, pdf_path):
@@ -23,8 +23,8 @@ class KnowledgeGraph:
     def extract_entities_relations(self, text):
         """ Extracts entities and relations using spaCy NLP """
         doc = self.nlp(text)
-        entities = [ent.text for ent in doc.ents]  # Extract named entities
-        relations = [(entities[i], entities[i+1]) for i in range(len(entities)-1)]  # Create entity pairs
+        entities = [ent.text for ent in doc.ents] 
+        relations = [(entities[i], entities[i+1]) for i in range(len(entities)-1)]  
         return entities, relations
 
     def process_pdfs(self):

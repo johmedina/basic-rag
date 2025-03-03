@@ -6,19 +6,17 @@ from PIL import Image
 from io import BytesIO
 import numpy as np
 from sentence_transformers import SentenceTransformer
+from langchain.text_splitter import RecursiveCharacterTextSplitter
 import pytesseract
 from bs4 import BeautifulSoup
 
 def chunk_text(text, chunk_size=500, overlap=50):
-    """
-    Splits text into overlapping chunks of `chunk_size` words with `overlap` words repeated between chunks.
-    """
-    words = text.split()
-    chunks = []
-    for i in range(0, len(words), chunk_size - overlap):
-        chunk = " ".join(words[i:i + chunk_size])
-        chunks.append(chunk)
-    return chunks
+    text_splitter = RecursiveCharacterTextSplitter(
+        chunk_size=chunk_size,
+        chunk_overlap=overlap,
+        separators=["\n\n", "\n", " ", ""],  
+    )
+    return text_splitter.split_text(text)
 
 def extract_text(pdf_path):
     doc = fitz.open(pdf_path)

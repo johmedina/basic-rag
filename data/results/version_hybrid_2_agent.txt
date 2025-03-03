@@ -1,0 +1,128 @@
+Evaluating Response Generation...
+Expanded Query: Retrieve Ooredoo's total revenue figures for H1 2024, including any relevant financial summaries or reports that provide insights into revenue performance and year-over-year (YoY) comparisons.
+EXPECTED ANSWER --- QAR 11.8 billion --- RESPONSE ---  QAR 11.8 billion. ---
+Expanded Query: Retrieve Ooredoo's EBITDA figure for H1 2024 financial report or release.
+EXPECTED ANSWER --- QAR 5.1 billion --- RESPONSE ---  5.1 billion QAR. ---
+Expanded Query: Retrieve Ooredoo's net profit data for H1 2024, including any comparative analysis or notes regarding YoY performance, EBITDA details, revenue figures, and related financial metrics.
+EXPECTED ANSWER --- QAR 1.9 billion --- RESPONSE ---  1.9 billion. ---
+Expanded Query: What was the percentage increase in Ooredoo's EBITDA margin for H1 2024 compared to H1 2023?
+EXPECTED ANSWER --- +1pp --- RESPONSE ---  1 pp. ---
+Expanded Query: Retrieve Ooredoo's free cash flow figures for H1 2024, including detailed insights into financial performance metrics, cash flow analysis, and comparisons to prior periods.
+EXPECTED ANSWER --- QAR 4.1 billion --- RESPONSE ---  QAR 4.1 billion. ---
+Expanded Query: Which countries experienced the highest revenue growth rate in H1 2024 compared to previous periods?
+EXPECTED ANSWER --- Iraq, Algeria, Kuwait, Maldives, Tunisia --- RESPONSE ---  Algeria, Maldives, and Tunisia. ---
+Expanded Query: What significant AI partnership did Ooredoo establish in H1 2024 that impacts its operations or financial performance?
+EXPECTED ANSWER --- First NVIDIA Cloud Partner in MENA --- RESPONSE ---  Ooredoo secured a partnership with NVIDIA for AI technology deployment. ---
+Expanded Query: What is the projected economic impact of Generative AI (GenAI) in the Gulf Cooperation Council (GCC) region by 2030, including potential effects on GDP growth, job creation, and revenue generation?
+EXPECTED ANSWER --- $23.5 billion per year --- RESPONSE ---  $23.5 billion. ---
+Expanded Query: What are the projected investment figures for Ooredoo in AI and cloud services for the upcoming fiscal years?
+EXPECTED ANSWER --- $1 billion --- RESPONSE ---  USD 1 billion. ---
+Expanded Query: What is the revenue contribution of Qatar to Ooredoo for H1 2024?
+Expanded Query: What is the total Capex investment reported by Ooredoo for H1 2024?
+EXPECTED ANSWER --- QAR 1.0 billion --- RESPONSE ---  1.0 billion. ---
+Expanded Query: To find the most relevant documents regarding customer contributions to Ooredoo's network in H1 2024, the search query may be improved as follows:
+
+"country with highest customer contribution to Ooredoo network H1 2024"
+Expanded Query: Please provide Ooredoo's reported debt/EBITDA ratio for H1 2024.
+Expanded Query: How did Ooredoo's net profit change year-over-year (YoY) in the first half (H1) of 2024?
+EXPECTED ANSWER --- +4% (normalized +14%) --- RESPONSE ---  6%. ---
+Expanded Query: Which region experienced a decline in revenue due to the war in H1 2024?
+EXPECTED ANSWER --- Palestine --- RESPONSE ---  Oman. ---
+Expanded Query: What was the percentage of Ooredoo's customer base located in Iraq during the most recent reporting period?
+Expanded Query: Retrieve data on mobile churn rates by country for H1 2024, specifically identifying the country with the lowest mobile churn rate.
+EXPECTED ANSWER --- Kuwait (3%) --- RESPONSE ---  Kuwait. ---
+Expanded Query: Which countries had completed data center carve-outs by the end of H1 2024?
+EXPECTED ANSWER --- Qatar, Tunisia, Kuwait --- RESPONSE ---  Qatar, Tunisia, and Kuwait. ---
+Expanded Query: Ooredoo financing deal amount raised in H1 2024.
+EXPECTED ANSWER --- QAR 2 billion --- RESPONSE ---  QAR 2 billion. ---
+Expanded Query: Ooredoo is collaborating with a leading AI technology provider to enhance its digital transformation initiatives. For the most accurate and detailed information, please search for "Ooredoo AI technology partnership" or "Ooredoo collaboration AI provider" in financial news sources or databases.
+EXPECTED ANSWER --- NVIDIA --- RESPONSE ---  NVIDIA. ---
+Expanded Query: What is the amount of Ooredoo's bond issuance reported for H1 2024?
+Expanded Query: Please provide the specific financial report or press release related to Ooredoo's dividend yield for 2023. Alternatively, you can search for "Ooredoo 2023 dividend yield" along with "annual report" or "Q1 2023 earnings release" for the most accurate and relevant information.
+EXPECTED ANSWER --- 5.24% --- RESPONSE ---  4.77%. ---
+Expanded Query: What is Ooredoo's forecasted total Capex investment for FY24?
+EXPECTED ANSWER --- QAR 3.5 billion --- RESPONSE ---  QAR 3.5 billion. ---
+Expanded Query: Retrieve documents regarding the country with the highest 5G population coverage in H1 2024, focusing on metrics and data analysis related to 5G deployment, population coverage statistics, and comparative assessments among countries. Include information on infrastructure investment, technological advancements, and government policies supporting 5G expansion.
+EXPECTED ANSWER --- Qatar (98.95%) --- RESPONSE ---  Qatar. ---
+Expanded Query: Retrieve Ooredoo's customer statistics for H1 2024, specifically focusing on total customers excluding those in Myanmar.
+EXPECTED ANSWER --- 49.7 million --- RESPONSE ---  49.7 million. ---
+Expanded Query: To enhance the search query for retrieving relevant documents, I suggest rephrasing it as follows:
+
+"What percentage of Ooredoo's total network traffic in Kuwait was attributed to 4G usage?"
+EXPECTED ANSWER --- 52.14% --- RESPONSE ---  50.03%. ---
+Expanded Query: Retrieve documents detailing Ooredoo's customer churn rate in Qatar, including data from recent reports, financial statements, and market analysis for the relevant fiscal periods. Look for statistics and metrics related to customer retention, particularly focusing on the most current figures available. Include comparisons with previous quarters (Q1, Q2) and year-over-year (YoY) trends if available.
+EXPECTED ANSWER --- 6% --- RESPONSE ---  6%. ---
+Expanded Query: What was the impact of the one-off bad debt provision on Kuwait's EBITDA decline?
+EXPECTED ANSWER --- -10% --- RESPONSE ---  15%. ---
+Expanded Query: Retrieve the EBITDA margin data for Tunisia for H1 2024, including relevant financial performance indicators and comparisons to previous periods.
+EXPECTED ANSWER --- 41% --- RESPONSE ---  41%. ---
+Expanded Query: Which country experienced the highest growth in data volume during H1 2024?
+Expanded Query: Retrieve Ooredoo's EBITDA for Kuwait in H1 2024.
+EXPECTED ANSWER --- QAR 406 million --- RESPONSE ---  406 million QAR. ---
+Expanded Query: What effects did Myanmar's exit have on Ooredoo's H1 2024 financial performance, specifically regarding revenue, EBITDA, and overall Net Profit?
+EXPECTED ANSWER --- One-time gain of QAR 118 million --- RESPONSE ---  Myanmar's exit contributed positively to Ooredoo's H1 2024 results, reflecting a normalized net profit increase due to the disposal gain. ---
+Expanded Query: Retrieve documents detailing Ooredoo's market performance, specifically those that highlight EBITDA margins by market. Focus on comparative analysis and rankings of EBITDA margins across Ooredoo's different markets to identify which market had the highest EBITDA margin. Include any relevant quarterly reports (H1, Q1, Q2) or year-over-year (YoY) assessments that feature financial metrics and performance evaluations.
+Expanded Query: What was Ooredoo's capital expenditure (Capex) for network expansion in Iraq during the most recent fiscal year?
+EXPECTED ANSWER --- QAR 1.2 billion --- RESPONSE ---  Apologies, but I do not have enough information. Please ask another query. ---
+Expanded Query: Identify countries with the highest EBITDA growth rates reported for H1 2024.
+EXPECTED ANSWER --- Iraq and Algeria --- RESPONSE ---  Algeria and Tunisia. ---
+Expanded Query: What is the percentage of Ooredoo's total revenue attributed to mobile services in Qatar for the most recent fiscal year?
+Expanded Query: Retrieve documents detailing revenue growth statistics by country for H1 2024, specifically highlighting the country with the highest YoY revenue growth rate. Include analyses of contributing factors, financial performance metrics, and comparisons to prior quarters (Q1 and Q2) within the same year.
+Expanded Query: Retrieve the free cash flow data for Ooredoo in Q2 2024, including any relevant comparisons to previous quarters, YoY analysis, and additional insights related to Capex, EBITDA, revenue trends, and net profit for that period.
+Expanded Query: Please provide Ooredoo's total revenue for Q3 2024 year-to-date (9M 2024).
+EXPECTED ANSWER --- QAR 17.7 billion --- RESPONSE ---  QAR 17.7 billion. ---
+Expanded Query: Retrieve Ooredoo's net profit for the 9M 2024 financial period, including relevant details on revenue, EBITDA, and any comparisons to previous years (YoY).
+EXPECTED ANSWER --- QAR 2.9 billion --- RESPONSE ---  2.9 billion. ---
+Expanded Query: To retrieve the most relevant documents regarding Ooredoo's free cash flow for 9M 2024, you might consider using the following improved search query:
+
+"Ooredoo free cash flow report 9M 2024"
+EXPECTED ANSWER --- QAR 5.8 billion --- RESPONSE ---  5.8 billion QAR. ---
+Expanded Query: Retrieve Ooredoo's EBITDA for the period ending September 30, 2024, including any relevant financial reports or data releases that detail the company's performance in 9M 2024.
+EXPECTED ANSWER --- QAR 7.7 billion --- RESPONSE ---  QAR 7.7 billion. ---
+Expanded Query: What is the EBITDA margin for the first nine months (9M) of fiscal year 2024?
+EXPECTED ANSWER --- 44% --- RESPONSE ---  44%. ---
+Expanded Query: Please provide the revenue growth figures for Ooredoo in Q3 2024, including any relevant YoY comparisons or insights regarding EBITDA, Capex, and Net Profit.
+EXPECTED ANSWER --- +1% YoY --- RESPONSE ---  +1%. ---
+Expanded Query: Please provide data on the highest EBITDA growth rates by country for Q3 2024.
+Expanded Query: Retrieve documents on "Q3 2024 highest revenue growth by country" and include metrics on YoY comparisons, EBITDA, Net Profit, and relevant financial performance indicators.
+Expanded Query: Please provide the total customer base for Ooredoo in Q3 2024.
+Expanded Query: What was the total amount raised by Ooredoo through bond issuance in Q3 2024?
+EXPECTED ANSWER --- USD 500 million --- RESPONSE ---  USD 500 million. ---
+Expanded Query: What significant financial transaction did Ooredoo finalize in Q3 2024?
+EXPECTED ANSWER --- USD 500 million bond issuance --- RESPONSE ---  QAR 2 billion financing deal. ---
+Expanded Query: To find Ooredoo's net debt/EBITDA ratio for Q3 2024, please consider revising your search query to include more specific terms associated with financial reporting and context:
+
+"Retrieve Ooredoo's Q3 2024 financial report focusing on the net debt/EBITDA ratio and relevant metrics such as total debt, EBITDA, and any accompanying commentary on performance or financial strategy."
+
+This enhanced query should yield more precise results regarding the desired financial ratio in the specified period.
+Expanded Query: What is Ooredoo's projected Capex investment for the fiscal year 2024 (FY24)?
+EXPECTED ANSWER --- QAR 3.5 billion --- RESPONSE ---  QAR 3.5 billion. ---
+Expanded Query: Retrieve documents detailing which countries had completed data center carve-outs by Q3 2024, highlighting the specific financial impacts, market trends, and notable transactions associated with these carve-outs. Include information on EBITDA, Capex, Net Profit, and Revenue where applicable.
+EXPECTED ANSWER --- Qatar, Tunisia, Kuwait --- RESPONSE ---  Qatar, Tunisia, and Kuwait. ---
+Expanded Query: What was the amount of financing secured by Ooredoo in Q3 2024?
+EXPECTED ANSWER --- QAR 2 billion --- RESPONSE ---  QAR 2 billion. ---
+Expanded Query: Please provide the specific financial report or data source for Ooredoo’s 2023 dividend payout ratio, or specify if you are looking for the most recent financial statements, earnings reports, or investor relations information related to the company.
+EXPECTED ANSWER --- 59.1% --- RESPONSE ---  59.1%. ---
+Expanded Query: Retrieve documents related to the mobile churn rate by country for Q3 2024, focusing specifically on identifying the country with the lowest reported mobile churn rate during this period. Please include comparative analyses, charts, and statistics that highlight trends and performance in mobile service retention across different countries.
+Expanded Query: Retrieve documents analyzing the financial performance of various regions affected by war during Q3 2024, including specific impacts on key metrics such as Revenue, EBITDA, Net Profit, and Capex. Additionally, focus on any YoY comparisons that highlight the financial consequences of the conflict.
+EXPECTED ANSWER --- Palestine --- RESPONSE ---  Palestine. ---
+Expanded Query: Retrieve information on the revenue growth for Algeria in Q3 2024, including year-over-year (YoY) comparisons, relevant financial reports, and any data on GDP or economic indicators that could impact revenue trends.
+EXPECTED ANSWER --- +16% --- RESPONSE ---  15%. ---
+Expanded Query: What was Ooredoo's investment in digital transformation in Q3 2024?
+Expanded Query: To retrieve the most relevant documents regarding 5G population coverage by country in Q3 2024, you could use the following improved search query:
+
+"5G population coverage by country Q3 2024 highest ranking"
+Expanded Query: Retrieve documents analyzing data volume growth by country for Q3 2024, focusing on statistics and comparisons, specifically highlighting which country experienced the highest growth rate. Ensure to include relevant metrics and financial insights related to data volume trends.
+Expanded Query: What percentage of Ooredoo Tunisia's network traffic was attributed to 4G usage?
+EXPECTED ANSWER --- 93.22% --- RESPONSE ---  93.22%. ---
+Expanded Query: Which country experienced the most substantial growth in customer base during Q3 2024?
+Expanded Query: Retrieve Ooredoo's Q3 2024 customer count excluding Myanmar, focusing on relevant reports or data sources that specifically detail customer metrics and regional performance excluding Myanmar.
+EXPECTED ANSWER --- 50.7 million --- RESPONSE ---  150.6 million. ---
+Expanded Query: What was the percentage of Ooredoo's customer base located in Iraq as of the latest available financial report or data?
+Expanded Query: What country exhibited the highest Capital Expenditure (Capex) intensity in the third quarter (Q3) of 2024?
+EXPECTED ANSWER --- Algeria (21%) --- RESPONSE ---  21%. ---
+Expanded Query: What is the EBITDA margin reported for Kuwait in Q3 2024?
+EXPECTED ANSWER --- 26% --- RESPONSE ---  26%. ---
+Expanded Query: Which country recorded the highest digital recharge percentage in Q3 2024?
+Expanded Query: What is the total data volume across Ooredoo’s network reported for Q3 2024?
+ROUGE-L Score: 0.65, Fuzzy Match: 0.78

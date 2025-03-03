@@ -18,7 +18,10 @@ class HybridAgenticRetriever:
         self.load_index()
 
     def agentic_query_expansion(self, query):
-        system_prompt = "You are an AI expert in financial data retrieval. Rephrase this query to optimize document search."
+        system_prompt ="""You are an AI specializing in financial data retrieval. 
+            Improve the search query to retrieve the most relevant documents while preserving financial terminology.
+            Do NOT change financial terms like H1, Q1, Q2, YoY, EBITDA, Capex, Net Profit, Revenue, or similar domain-specific language.
+            """
         gpt_response = self.client.chat.completions.create(
             model="gpt-4o-mini",
             messages=[

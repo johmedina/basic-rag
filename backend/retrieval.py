@@ -62,22 +62,6 @@ class DocumentRetriever:
         return retrieved_chunks
 
 
-    def hybrid_retrieval(self, query, top_k=10):
-        """Hybrid retrieval using FAISS and cosine similarity for improved results."""
-        retrieved_texts = self.retrieve(query, top_k)
-        query_embedding = self.model.encode(
-            [query], 
-            convert_to_numpy=True, 
-            normalize_embeddings=True 
-        )
-        document_embeddings = np.load("data/embeddings/text_embeddings.npy")
-
-        similarities = cosine_similarity(query_embedding, document_embeddings)[0]
-        top_indices = np.argsort(similarities)[-top_k:][::-1]
-        hybrid_results = [self.text_data[i] for i in top_indices]
-
-        return list(set(retrieved_texts + hybrid_results))
-
 if __name__ == "__main__":
     retriever = DocumentRetriever()
     retriever.load_index()

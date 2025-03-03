@@ -4,8 +4,10 @@ import os
 import json
 from sentence_transformers import SentenceTransformer
 from openai import OpenAI
-from backend.graph_rag import KnowledgeGraph 
+from backend.graph_rag import KnowledgeGraph
 from backend.config import OPENAI_API_KEY
+from sklearn.metrics.pairwise import cosine_similarity
+from rank_bm25 import BM25Okapi 
 
 class HybridAgenticRetriever:
     def __init__(self, embedding_model="sentence-transformers/all-MiniLM-L6-v2", index_path="data/embeddings/index.faiss"):
@@ -14,11 +16,12 @@ class HybridAgenticRetriever:
         self.index_path = index_path
         self.index = None
         self.text_data = []
-        self.knowledge_graph = KnowledgeGraph()  
+        self.knowledge_graph = KnowledgeGraph()
+        self.bm25 = None
         self.load_index()
 
     def agentic_query_expansion(self, query):
-        system_prompt ="""You are an AI specializing in financial data retrieval. 
+        system_prompt = """You are an AI specializing in financial data retrieval. 
             Improve the search query to retrieve the most relevant documents while preserving financial terminology.
             Do NOT change financial terms like H1, Q1, Q2, YoY, EBITDA, Capex, Net Profit, Revenue, or similar domain-specific language.
             """
@@ -33,16 +36,23 @@ class HybridAgenticRetriever:
         return gpt_response.choices[0].message.content.strip()
 
     def create_index(self, documents):
-        """Encodes documents and creates FAISS index."""
-        embeddings = self.model.encode(documents, convert_to_numpy=True)
+        """Encodes documents and creates FAISS and BM25 indices."""
+        text_chunks = [doc["text"] for doc in documents if "text" in doc] 
+
+        embeddings = self.model.encode(text_chunks, convert_to_numpy=True)
         d = embeddings.shape[1]
         self.index = faiss.IndexFlatL2(d)
         self.index.add(embeddings)
         faiss.write_index(self.index, self.index_path)
 
         self.text_data = documents
+        self.bm25 = BM25Okapi([chunk.split() for chunk in text_chunks])
+
         with open("data/embeddings/documents.json", "w") as f:
             json.dump(self.text_data, f)
+
+        print(f"FAISS and BM25 indexes created with {len(text_chunks)} documents.")
+
 
     def load_index(self):
         """Loads FAISS index if it exists, else creates a new one."""
@@ -61,19 +71,31 @@ class HybridAgenticRetriever:
             
             self.create_index(text_data)
 
+        self.bm25 = BM25Okapi([doc["text"].split() for doc in self.text_data if "text" in doc])
+
     def retrieve_faiss(self, query, top_k=5):
-        """Performs FAISS-based retrieval"""
-        query_embedding = self.model.encode([query], convert_to_numpy=True)
+        """Performs FAISS-based retrieval."""
+        query_embedding = self.model.encode([query], convert_to_numpy=True, normalize_embeddings=True)
         document_embeddings = np.load("data/embeddings/text_embeddings.npy")
 
-        similarities = np.dot(document_embeddings, query_embedding.T).flatten()
+        similarities = cosine_similarity(query_embedding, document_embeddings)[0]
         top_indices = np.argsort(similarities)[-top_k:][::-1]
-        
+
         retrieved_chunks = [self.text_data[i] for i in top_indices if i < len(self.text_data)]
-        # print('RETRIEVED CHUNKS ---', retrieved_chunks, '---')
         return retrieved_chunks
 
-    
+    def retrieve_bm25(self, query, top_k=5):
+        """Performs BM25 keyword-based retrieval."""
+        if not self.bm25:
+            return [] 
+
+        query_tokens = query.split()
+        bm25_scores = self.bm25.get_scores(query_tokens)
+        top_indices = np.argsort(bm25_scores)[-top_k:][::-1]
+
+        retrieved_chunks = [self.text_data[i] for i in top_indices if i < len(self.text_data)]
+        return retrieved_chunks
+
     def retrieve_graph(self, query):
         """Retrieves related financial entities from the knowledge graph and ranks them."""
         entity = query.split()[0]  # Extract first word as entity (basic approach)
@@ -94,22 +116,23 @@ class HybridAgenticRetriever:
         
         return [entities[i] for i in ranked_indices]
 
-
-    def hybrid_retrieve(self, query, top_k=5):
-        """Combines Agentic Query Expansion, FAISS retrieval, and Graph RAG retrieval"""
+    def hybrid_retrieve(self, query, top_k=15):
+        """Combines FAISS, BM25, and Graph RAG retrieval."""
         faiss_results = self.retrieve_faiss(query, top_k)
-        
-        # Use Graph RAG and Agent LLM only if FAISS doesn’t return enough results
-        if len(faiss_results) < top_k:
-            improved_query = self.agentic_query_expansion(query)
-            print(f"Expanded Query: {improved_query}")
-            graph_results = self.retrieve_graph(improved_query)
-            # Prioritize FAISS, add top 2 Graph results
-            combined_results = faiss_results + graph_results[:2]  
-        else:
-            combined_results = faiss_results
+        bm25_results = self.retrieve_bm25(query, top_k)
 
-        return list(set(combined_results)) 
+        combined_results = {json.dumps(doc, sort_keys=True) for doc in faiss_results + bm25_results}
+        combined_results = [json.loads(doc) for doc in combined_results] 
+
+        # Use Graph RAG only if FAISS + BM25 doesn’t return enough results
+        if len(combined_results) < top_k:
+            improved_query = self.agentic_query_expansion(query)
+            print("ORIGINAL QUERY ---", query, '---', 'LLM QUERY ---', improved_query, '---')
+            graph_results = self.retrieve_graph(improved_query)
+            combined_results += graph_results[:2]  
+
+        return combined_results 
+
 
 if __name__ == "__main__":
     retriever = HybridAgenticRetriever()

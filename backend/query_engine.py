@@ -28,7 +28,6 @@ class RAGChatbot:
                 {"role": "system", "content": 
                   """You are an AI assistant for the Ooredoo Group. You will be answering mostly financial related questions.
                   Your answer should be **fact-based**, directly matching the expected answer format.
-                  Your answer should end with: My final answer is ___.
                   """
                 },
                 {"role": "user", "content": prompt}

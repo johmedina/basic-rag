@@ -13,7 +13,7 @@ def load_ground_truth(csv_path="data/ground_truth_gpt.csv"):
     df = pd.read_csv(csv_path)
     return df.to_dict(orient="records")
 
-def load_evaluation_data(csv_path="data/results/chatbot_analysis_hybrid_4.csv"):
+def load_evaluation_data(csv_path="data/results/chatbot_analysis_hybrid_5.csv"):
     """Loads saved chatbot responses and ground truth data from the CSV file."""
     df = pd.read_csv(csv_path)
     return df
@@ -125,7 +125,7 @@ def evaluate_generation(df):
     return avg_rouge, avg_fuzzy
 
 
-def human_analysis(chatbot, ground_truth, filename="data/results/chatbot_analysis_hybrid_4.csv"):
+def human_analysis(chatbot, ground_truth, filename="data/results/chatbot_analysis_hybrid_5.csv"):
     """Record ground truth answers and chatbot answers for human analysis"""
     data = []
     

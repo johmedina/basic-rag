@@ -21,14 +21,25 @@ class KnowledgeGraph:
         return text.strip()
 
     def extract_entities_relations(self, text):
-        """ Extracts entities and relations using spaCy NLP """
+        """Extracts named entities and their relations using dependency parsing."""
         doc = self.nlp(text)
-        entities = [ent.text for ent in doc.ents] 
-        relations = [(entities[i], entities[i+1]) for i in range(len(entities)-1)]  
-        return entities, relations
+        entities = {ent.text: ent.label_ for ent in doc.ents}  # Extract entities with types
+        relations = []
+
+        for token in doc:
+            # Look for verbs that indicate relationships
+            if token.pos_ == "VERB":
+                subject = [child.text for child in token.lefts if child.dep_ in ("nsubj", "nsubjpass")]
+                object_ = [child.text for child in token.rights if child.dep_ in ("dobj", "pobj", "attr")]
+
+                if subject and object_:
+                    relations.append((subject[0], token.text, object_[0])) 
+
+        return list(entities.keys()), relations 
+
 
     def process_pdfs(self):
-        """ Processes all PDFs in the data folder and builds the knowledge graph """
+        """Processes all PDFs in the data folder and builds the knowledge graph."""
         pdf_files = [f for f in os.listdir(self.pdf_folder) if f.endswith(".pdf")]
         
         for pdf_file in pdf_files:
@@ -38,11 +49,14 @@ class KnowledgeGraph:
             text = self.extract_text_from_pdf(pdf_path)
             entities, relations = self.extract_entities_relations(text)
 
-            # Add entities & relationships to the graph
+            # Add entities (nodes) to the graph
             for entity in entities:
                 self.graph.add_node(entity)
-            for ent1, ent2 in relations:
-                self.graph.add_edge(ent1, ent2)
+
+            # Add relationships (edges with labels)
+            for ent1, relation, ent2 in relations:
+                self.graph.add_edge(ent1, ent2, relation=relation)
+
 
     def query_graph(self, entity):
         """ Retrieves related concepts from the knowledge graph """

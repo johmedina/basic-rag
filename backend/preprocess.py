@@ -86,11 +86,22 @@ def preprocess_pdfs(pdf_folder):
     for pdf_path in pdf_files:
         print(f"Processing {pdf_path}...")
         
-        processed_data = (
-            extract_text(pdf_path) + 
-            extract_images_text(pdf_path) + 
-            extract_tables(pdf_path)  
-        )
+        text_chunks = extract_text(pdf_path)
+        images_text = extract_images_text(pdf_path)
+        tables_text = extract_tables(pdf_path)
+
+        # Grouping extracted text per page to keep context
+        page_data = {}
+
+        for entry in text_chunks + images_text + tables_text:
+            page_num = entry["page"]
+            if page_num not in page_data:
+                page_data[page_num] = entry["text"]
+            else:
+                page_data[page_num] += " " + entry["text"]
+
+        processed_data = [{"text": text, "page": page} for page, text in page_data.items()]
+
         
         all_data.extend(processed_data)
     
